@@ -2,7 +2,7 @@
 
 Ceci est un exemple de déploiement de l'application hestialabs-experiences sous forme de fichiers, sur un serveur où pourrait tourner aussi un cms. 
 
-L'exemple peut être déployé gratuitment chez netlify, un hébérgeur de sites statiques. Nous simulons un serveur tel que ngninx ou apache par des redirections d'url configurées dans le fichier **netlify.toml**. Nous simulons un cms par les fichiers dans le répertoire *cms* accessibles à l'url **/cms/[nom-du-fichier]**. Dans un déploiement de production, ces urls pointeraient vers un cms qui génère un contenu du même format dynamiquement.
+L'exemple est conçu pour être déployé gratuitement chez netlify, un hébérgeur de sites statiques (mais pour l'instant il ne marche qu'en local). Nous simulons un serveur tel que ngninx ou apache par des redirections d'url configurées dans le fichier **netlify.toml**. Nous simulons un cms par les fichiers dans le répertoire *cms* accessibles à l'url **/cms/[nom-du-fichier]**. Dans un déploiement de production, ces urls pointeraient vers un cms qui génère un contenu du même format dynamiquement.
 
 ## répertoires et fichiers
 - cms: dossier contenant les fichiers simulant le cms
