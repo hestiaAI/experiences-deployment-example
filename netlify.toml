@@ -28,19 +28,19 @@
 # when they detect a nuxt project
 [[redirects]]
   from = "/_nuxt/*"
-  to = "experiences/_nuxt/:splat"
+  to = "/experiences/_nuxt/:splat"
   status = 302
   force = true
 
 [[redirects]]
   from = "/experience/*"
-  to = "experiences/index.html"
+  to = "/experiences/index.html"
   status = 200
 
 [[redirects]]
   from = "/*"
   # to = "experiences/index.html"
-  to = "cms/index.html"
+  to = "/cms/index.html"
   status = 200
 
 # eof
