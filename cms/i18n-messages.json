@@ -1,13 +1,15 @@
 {
   "en": {},
   "fr": {
-    "experience": {
-      "intro": {
-        "title": "Analysez vos données privées"
-      }
+    "load-data": {
+      "title": "Analysez vos données privées!"
     },
     "experiences": {
-      "google": {}
+      "facebook": {
+        "intro": {
+          "dataPortalMessage": "Ce texte est configuré dans le fichier <a href=\"/cms/i18n-messages.json\">/cms/i18n-messages.json</a>"
+        }
+      }
     }
   }
 }
