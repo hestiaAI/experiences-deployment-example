@@ -33,6 +33,12 @@
   force = true
 
 [[redirects]]
+  from = "/kepler/*"
+  to = "/experiences/kepler/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/experience/*"
   to = "/experiences/index.html"
   status = 200

@@ -11,7 +11,9 @@
     "explorer"
   ],
   "i18nUrl": "/cms/i18n-messages.json",
+  "i18nLocales": ["fr"],
   "i18nLocale": "fr",
+  "homePath": "/",
   "theme": {
     "primary": "#3399cc",
     "secondary": "#005d8c",
