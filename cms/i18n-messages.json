@@ -1,13 +1,16 @@
 {
-  "en": {},
   "fr": {
     "load-data": {
-      "title": "Analysez vos données privées!"
+      "title": "Analyser vos données privées",
+      "link-text": "Cliquer ici",
+      "text": "pour demander les données privées qui ont été collectées sur vous. Une fois que vous les recevrez, analysez-les ici.",
+      "text-default": "Explorer la structure et le contenu de vos fichiers.",
+      "disclaimer": "Aucune donnée n'est transmise à quiconque. Toute l'expérience se déroule localement dans le navigateur et rien n'est laissé derrière vous dès que vous fermez l'onglet."
     },
     "experiences": {
       "facebook": {
         "intro": {
-          "dataPortalMessage": "Ce texte est configuré dans le fichier <a href=\"/cms/i18n-messages.json\">/cms/i18n-messages.json</a>"
+          "dataPortalHtml": "Ce texte est configuré dans le fichier <a href=\"/cms/i18n-messages.json\">/cms/i18n-messages.json</a>"
         }
       }
     }
