@@ -76,26 +76,28 @@ Certains textes sont spécifiques à une expérience, d'autres sont les mêmes p
 |--------------------------|--------------------------|----------------------------------------|
 | Titre                    | Analysez vos données     | load-data.title                        |
 | Paragraphe 1 (version a) |                          |                                        |
-| * url du lien            | https://facebook.com/... | experiences.facebook.dataPortal        |
-| * texte du lien          | Cliquer ici              | load-data.link-text                    |
-| * texte suivant le lien  | pour demander ...        | load-data.text                         |
-| * texte html  |                          |                                        |
+| . url du lien            | https://facebook.com/... | experiences.facebook.dataPortal        |
+| . texte du lien          | Cliquer ici              | load-data.link-text                    |
+| . texte suivant le lien  | pour demander ...        | load-data.text                         |
 | Paragraphe 2             | Important: Pour ...      | experiences.facebook.dataPortalMessage |
 | Paragraphe 3             | Aucune donnée n'est...   | load-data.disclaimer                   |
-|                          |                          |                                        |
 
 La plupart de nos experiences ont une valeur par défaut pour l'url *dataPortal*, mais ce n'est pas actuellement le cas pour netflix.
 
 ![ ](readme-img/accueil-experience-b.png) 
 Cette image montre un exemple de la deuxième manière de spécifier le premier paragraphe.
 
-| Paragraphe 1 (version b)         |                        |                                     |
-| * texte pouvant contenir du html | Ce texte est configuré ... | experiences.facebook.dataPortalHtml |
+| Texte                            | Exemple                    | Adresse (exemple pour facebook)     |
+|----------------------------------|----------------------------|-------------------------------------|
+| Paragraphe 1 (version b)         |                            |                                     |
+| . texte pouvant contenir du html | Ce texte est configuré ... | experiences.facebook.dataPortalHtml |
 
 Si le paragraphe n'est pas configuré comme dans la version b, et que l'expérience ne spécifie pas l'url dataPortal nécessaire pour afficher la version a, la version c est affichée.
 
-| Paragraphe 1 (version c)         |                         |
-| * texte pouvant contenir du html |  load-data.text-default |
+| Texte                            | Adresse                |
+|----------------------------------|------------------------|
+| Paragraphe 1 (version c)         |                        |
+| . texte pouvant contenir du html | load-data.text-default |
 
 Dans l'exemple déployé sur ce site, 
 [facebook](https://deployment-example-experiences.netlify.app/experiences/facebook) un paragraphe 1 version b parce que dataPortalHtml est configuré dans le fichier de traduction,
