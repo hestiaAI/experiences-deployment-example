@@ -64,23 +64,46 @@ Sa structure est faite d'objets json imbriqués. Si vous voulez changer un texte
 
 Dans cet exemple, nous avons configuré explicitement les textes de la page d'accueil d'une expérience.
 
+``` json
+{
+  "fr": {
+    "load-data": {
+      "title": "Analyser vos données privées",
+      "link-text": "Cliquer ici",
+      "text": "pour demander les données privées qui ont été collectées sur vous. Une fois que vous les recevrez, analysez-les ici.",
+      "text-default": "Explorer la structure et le contenu de vos fichiers.",
+      "disclaimer": "Aucune donnée n'est transmise à quiconque. Toute l'expérience se déroule localement dans le navigateur et rien n'est laissé derrière vous dès que vous fermez l'onglet."
+    },
+    "experiences": {
+      "facebook": {
+        "intro": {
+          "dataPortalHtml": "Ce texte est configuré dans le fichier <a href=\"/cms/i18n-messages.json\">/cms/i18n-messages.json</a>"
+        }
+      }
+    }
+  }
+}
+```
+
+Pour modifier le texte d'introduction de twitter, il suffirait d'ajouter à l'objet "experiences" une propriété "twitter" au même format que l'objet "facebook".
+
 #### Structure de la page d'accueil d'une expérience
  
 ![ ](readme-img/accueil-experience-a.png) 
 
 Le texte est fait d'un titre et de trois paragraphes. Le premier paragraphe peut être configuré de plusieurs manières différentes.
 
-Certains textes sont spécifiques à une expérience, d'autres sont les mêmes partout. Un texte spécifique à l'expérience facebook aura toujours une adresse qui commence par *experiences.facebook*. 
+Certains textes sont spécifiques à une expérience, d'autres sont les mêmes partout. Un texte spécifique à l'expérience twitter aura toujours une adresse qui commence par *experiences.twitter*. 
 
-| Texte                    | Exemple                  | Adresse (exemple pour facebook)        |
-|--------------------------|--------------------------|----------------------------------------|
-| Titre                    | Analysez vos données     | load-data.title                        |
-| Paragraphe 1 (version a) |                          |                                        |
-| . url du lien            | https://facebook.com/... | experiences.facebook.dataPortal        |
-| . texte du lien          | Cliquer ici              | load-data.link-text                    |
-| . texte suivant le lien  | pour demander ...        | load-data.text                         |
-| Paragraphe 2             | Important: Pour ...      | experiences.facebook.dataPortalMessage |
-| Paragraphe 3             | Aucune donnée n'est...   | load-data.disclaimer                   |
+| Texte                    | Exemple                 | Adresse (exemple pour twitter)        |
+|--------------------------|-------------------------|---------------------------------------|
+| Titre                    | Analysez vos données    | load-data.title                       |
+| Paragraphe 1 (version a) |                         |                                       |
+| . url du lien            | https://help.twitter.com/... | experiences.twitter.dataPortal       |
+| . texte du lien          | Cliquer ici             | load-data.link-text                   |
+| . texte suivant le lien  | pour demander ...       | load-data.text                        |
+| Paragraphe 2             | Important: Pour ...     | experiences.twitter.dataPortalMessage |
+| Paragraphe 3             | Aucune donnée n'est...  | load-data.disclaimer                  |
 
 La plupart de nos experiences ont une valeur par défaut pour l'url *dataPortal*, mais ce n'est pas actuellement le cas pour netflix.
 
@@ -103,29 +126,6 @@ Dans l'exemple déployé sur ce site,
 [facebook](https://deployment-example-experiences.netlify.app/experiences/facebook) un paragraphe 1 version b parce que dataPortalHtml est configuré dans le fichier de traduction,
 [twitter](https://deployment-example-experiences.netlify.app/experiences/twitter) a un paragraphe 1 version a, parce que l'url dataPortal a une valeur par défaut, et 
 [netflix](https://deployment-example-experiences.netlify.app/experiences/netflix) un paragraphe version c.
-
-``` json
-{
-  "fr": {
-    "load-data": {
-      "title": "Analyser vos données privées",
-      "link-text": "Cliquer ici",
-      "text": "pour demander les données privées qui ont été collectées sur vous. Une fois que vous les recevrez, analysez-les ici.",
-      "text-default": "Explorer la structure et le contenu de vos fichiers.",
-      "disclaimer": "Aucune donnée n'est transmise à quiconque. Toute l'expérience se déroule localement dans le navigateur et rien n'est laissé derrière vous dès que vous fermez l'onglet."
-    },
-    "experiences": {
-      "facebook": {
-        "intro": {
-          "dataPortalHtml": "Ce texte est configuré dans le fichier <a href=\"/cms/i18n-messages.json\">/cms/i18n-messages.json</a>"
-        }
-      }
-    }
-  }
-}
-```
-
-Pour modifier le texte d'introduction de twitter, il suffirait d'ajouter à l'objet "experiences" une propriété "twitter" du même format que l'objet "facebook".
 
 ## Servir le site localement
 Une librairie javascript de netlify permet de servir cet exemple sur son propre ordinateur.
