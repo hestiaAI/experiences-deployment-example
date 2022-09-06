@@ -15,7 +15,7 @@ L'exemple est conçu pour être déployé gratuitement chez netlify, un héberge
 
 Nous simulons un cms par les fichiers dans le répertoire *cms* accessibles à l'url **/cms/[nom-du-fichier]**. Dans un déploiement de production, ces urls pointeraient vers un cms qui génère un contenu du même format dynamiquement. L'intégration ce résume à deux urls:
 
-### [/cms/index.html](https://deployment-example-experiences.netlify.app/cms/index.html)
+### Page d'accueil [/cms/index.html](https://deployment-example-experiences.netlify.app/cms/index.html)
 
 Cette page est générée par le CMS. Le serveur doit être configuré pour qu'elle soit la page d'accueil du domaine. 
 
@@ -48,7 +48,7 @@ Dans le même fichier, notre application est configurée pour qu'un click sur l'
   "homePath": "/",
 ```
 
-### [/cms/i18n-messages.json](https://deployment-example-experiences.netlify.app/cms/i18n-messages.json)
+### Fichier de traduction [/cms/i18n-messages.json](https://deployment-example-experiences.netlify.app/cms/i18n-messages.json)
 
 Les textes configurés dans ce fichier de traduction remplacent les textes que l'application affiche par défaut. Tous les textes de l'application sont configurables de cette manière.
 
