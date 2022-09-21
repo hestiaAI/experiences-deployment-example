@@ -128,6 +128,14 @@ Dans l'exemple déployé sur ce site,
 [netflix](https://deployment-example-experiences.netlify.app/experiences/netflix) un paragraphe version c.
 
 ## Configuration de l'application
+
+L'application est configurée par le fichier [config.json](config.json).
+
+Pour utiliser la visualisation de cartes géographiques, il faut obtenir un [token d'accès de mapbox](https://docs.mapbox.com/api/accounts/tokens/), et renseigner la propriété `mapboxToken` dans **config.json**. Dans cet exemple, nous utilisons un token appartenant à hestia.ai.
+
+Les couleurs de l'interface graphique peuvent être configurées dans la propriété `theme`. Ce [générateur de theme](https://theme-generator.vuetifyjs.com/) peut vous aider à choisir d'autres couleurs.
+
+
 ## Servir le site localement
 Une librairie javascript de netlify permet de servir cet exemple sur son propre ordinateur.
 
