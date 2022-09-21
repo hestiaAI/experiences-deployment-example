@@ -127,6 +127,7 @@ Dans l'exemple déployé sur ce site,
 [twitter](https://deployment-example-experiences.netlify.app/experiences/twitter) a un paragraphe 1 version a, parce que l'url dataPortal a une valeur par défaut, et 
 [netflix](https://deployment-example-experiences.netlify.app/experiences/netflix) un paragraphe version c.
 
+## Configuration de l'application
 ## Servir le site localement
 Une librairie javascript de netlify permet de servir cet exemple sur son propre ordinateur.
 
